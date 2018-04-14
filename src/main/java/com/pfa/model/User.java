@@ -11,12 +11,12 @@ public class User {
     private String id;
     private String firstName;
     private String lastName;
-    private Email email;
-    private Password password;
+    private String email;
+    private String password;
 public User(){
     super();
 }
-public User(String firstName,String lastName, Email email,Password password){
+public User(String firstName,String lastName, String email,String password){
     this.firstName=firstName;
     this.lastName=lastName;
     this.email=email;
@@ -35,11 +35,11 @@ public User(String firstName,String lastName, Email email,Password password){
         return lastName;
     }
 
-    public Email getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public Password getPassword() {
+    public String getPassword() {
         return password;
     }
 
@@ -55,11 +55,11 @@ public User(String firstName,String lastName, Email email,Password password){
         this.lastName = lastName;
     }
 
-    public void setEmail(Email email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public void setPassword(Password password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }
